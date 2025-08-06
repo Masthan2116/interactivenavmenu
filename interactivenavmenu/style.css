@@ -1,0 +1,53 @@
+/* Reset & Base Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+#navbar.scrolled {
+  background-color: #555; /* Changes color on scroll */
+}
+
+/* Navigation Menu Items */
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effects */
+.nav-menu li a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Page Content */
+.content {
+  padding-top: 80px; /* Prevent content from hiding behind nav */
+  text-align: center;
+}
